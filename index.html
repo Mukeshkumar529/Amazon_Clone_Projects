@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<body class="body">
+    <section class="navigation">
+
+
+        <div class="nav_top">
+            <div class="logo">
+                <a href="#"><img src="./images/amazon_logo.png" alt=""></a>
+            </div>
+
+            <div class="current_location">
+                <i class="bi bi-geo-alt"></i>
+                <div class="location_text">
+                    <h6>Delivering to +cityname pincode</h6>
+                    <h2>Choose location for most accurate options</h2>
+                </div>
+            </div>
+
+            <div class="search_section">
+                <div class="search">
+                    <li class="see_more" onclick="ViewDetails()">
+                        <a href="#" class="drop_func">
+                            <h2>All</h2><i class="bi bi-caret-down-fill"></i>
+                        </a>
+                        <select name="categories" id="see_more">
+
+                            <option>
+                    <li>All Categories </li>
+                    </option>
+                    <option>
+                        <li>Alexa Skill </li>
+                    </option>
+                    <option>
+                        <li>Amazon Devices </li>
+                    </option>
+                    <option>
+                        <li>Amazon Fashion </li>
+                    </option>
+                    <option>
+                        <li>Amazon Fress </li>
+                    </option>
+                    <option>
+                        <li>Amazon Pharamacy </li>
+                    </option>
+                    <option>
+                        <li>Appliances </li>
+                    </option>
+                    <option>
+                        <li>Apps & Games </li>
+                    </option>sss
+                    <option>
+                        <li>Audible Audiobooks </li>
+                    </option>
+                    <option>
+                        <li>Baby </li>
+                    </option>
+                    <option>
+                        <li>Beauty </li>
+                    </option>
+                    <option>
+                        <li>Books </li>
+                    </option>
+                    <option>
+                        <li>Car & Motarbike </li>
+                    </option>
+                    <option>
+                        <li>Clothing & Accessories </li>
+                    </option>
+                    <option>
+                        <li>Collectibles </li>
+                    </option>
+                    <option>
+                        <li>Computers & Accessories </li>
+                    </option>
+                    <option>
+                        <li>Electronics </li>
+                    </option>
+                    <option>
+                        <li>Furnture </li>
+                    </option>
+                    <option>
+                        <li>Garden & Outdoors </li>
+                    </option>
+                    <option>
+                        <li>Gift Cards </li>
+                    </option>
+                    <option>
+                        <li>Grocery & Gourmet Foods </li>
+                    </option>
+                    <option>
+                        <li>Health & Personal Care </li>
+                    </option>
+                    <option>
+                        <li>Home & Kitchen </li>
+                    </option>
+                    <option>
+                        <li>Industrial & Scientific </li>
+                    </option>
+                    <option>
+                        <li>Jewellery </li>
+                    </option>
+                    <option>
+                        <li>Kindle Store </li>
+                    </option>
+                    <option>
+                        <li>Luggage & Bags </li>
+                    </option>
+                    <option>
+                        <li>Luxury Beauty </li>
+                    </option>
+                    <option>
+                        <li>Movies & TV Shows </li>
+                    </option>
+                    <option>
+                        <li>Music </li>
+                    </option>
+                    <option>
+                        <li>Musical Instruments </li>
+                    </option>
+                    <option>
+                        <li>Office Products </li>
+                    </option>
+                    <option>
+                        <li>Pet Supplies </li>
+                    </option>
+                    <option>
+                        <li>Prime Video </li>
+                    </option>
+                    <option>
+                        <li>Shoes & Handbags </li>
+                    </option>
+                    <option>
+                        <li>Software </li>
+                    </option>
+                    <option>
+                        <li>Sports, Fitness & Outdoors </li>
+                    </option>
+                    <option>
+                        <li>Subscribe & Save </li>
+                    </option>
+                    <option>
+                        <li>Tools & Home Improvement </li>
+                    </option>
+                    <option>
+                        <li>Toys & Games </li>
+                    </option>
+                    <option>
+                        <li>Under 500 </li>
+                    </option>
+                    <option>
+                        <li>Video Games </li>
+                    </option>
+                    <option>
+                        <li>Watches </li>
+                    </option>
+                    </select>
+                    </li>
+
+
+
+
+
+                    <input type="search" placeholder="Search amazon.in">
+                    <button><i class="bi bi-search"></i></button>
+                </div>
+
+            </div>
+
+            <div class="lang-selector">
+                <a href="#"><img src="./images/india.png" alt=""></a>
+                <a href="#">
+                    <h3>EN<i class="bi bi-caret-down-fill"></i></h3>
+                </a>
+
+            </div>
+            <div class="Sign_In_Out">
+                <a href="#">
+                    <h6>Hello, sign in</h6>
+                    <h2>Account & Lists<i class="bi bi-caret-down-fill"></i></h2>
+                </a>
+            </div>
+
+            <div class="return_order">
+                <a href="#">
+                    <h6>Returns</h6>
+                    <h2>& Orders</h2>
+                </a>
+            </div>
+
+            <div class="cart_img">
+                <option> <i class="bi bi-cart"></i> Cart</a>
+            </div>
+
+
+        </div>
+
+        <div class="below_nav">
+            <div class="nav_btn">
+                <a href="#" onclick="onView()"class="menu_icons"><i class="bi bi-list"> </i>
+                    <h2>All</h2>
+                </a>
+                <div class="side_navigation">
+                    <div class="Heading_Sidebar">    
+                        <h2><i class="bi bi-person-circle"></i>&nbsp;&nbsp;<p> Hello, Sign in</p></h2>
+                    </div>
+                    <div class="sidebar_heading_content">
+                        <h3>Trending</h3>
+                        <ul class="heading_content">
+                            <div>
+                                <li>Best Sellers</li></i>
+                            </div>
+                            <div>
+                                <li>New Releases</li></i>
+                            </div>
+                            <div>
+                                <li>Movers and Shakers</li></i>
+                            </div>
+                        </ul>
+                        <hr>
+                    </div>
+                    <div class="sidebar_heading_content">
+                        <h3>Digital Content And Devices</h3>
+                        <ul class="heading_content">
+                            <div>
+                                <li>Echo & Alexa</li>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<i class="bi bi-chevron-right"></i>
+                            </div>
+                            <div>
+                                <li>Fire TV</li> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;<i class="bi bi-chevron-right"></i>
+                            </div>
+                            <div>
+                                <li>Kindle E-Readers & eBooks</li> &nbsp;&nbsp; &nbsp;<i class="bi bi-chevron-right"></i>
+                            </div>
+                            <div>
+                                <li>Audible Audiobooks</li>  &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;<i class="bi bi-chevron-right"></i>
+                            </div>
+                            <div>
+                                <li>Amazon Prime Video</li>   &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <i class="bi bi-chevron-right"></i>
+                            </div>
+
+                            <div>
+                                <li>Amazon Prime Music</li> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<i class="bi bi-chevron-right"></i>
+                            </div>
+                        </ul>
+                        <hr>
+                    </div>
+
+                
+                    <div class="sidebar_heading_content">
+                        <h3>Shop By Category</h3>
+                        <ul class="heading_content">
+                            <div>
+                                <li>Mobile , Computers</li> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<i class="bi bi-chevron-right"></i>
+                            </div>
+                            <div>
+                                <li>TV, Appliances, Electronics</li> &nbsp;&nbsp; &nbsp;&nbsp; <i class="bi bi-chevron-right"></i>
+                            </div>
+                            <div>
+                                <li>Men's Fashion </li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; <i class="bi bi-chevron-right"></i>
+                            </div>
+                            <div>
+                                <li>Women's Fashion</li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <i class="bi bi-chevron-right"></i>
+                            </div>
+                        </ul>
+                        <hr>
+                    </div>
+
+                    <hr>
+                    <div class="sidebar_heading_content">
+                        <h3>Programs & Features</h3>
+                        <ul class="heading_content">
+                            <div>
+                                <li>Gift Cards & Mobile Recharges</li> <i class="bi bi-chevron-right"></i>
+                            </div>
+                            <div>
+                                <li>Amazon Launchpad</li> 
+                            </div>
+                            <div>
+                                <li>Flight Tickets</li> 
+                            </div>
+
+                            <div>
+                                <li>Buy more , Save more</li> 
+                            </div>
+                        </ul>
+                        <div class="line"></div>
+                    </div>
+ 
+                    <hr>
+                    <div class="sidebar_heading_content">
+                        <h3>Help & Settings</h3>
+                        <ul class="heading_content">
+                            <div>
+                                <li>Your Account</li>
+                            </div>
+                            <div>
+                                <li>Customer Service</li> 
+                            </div>
+                            <div>
+                                <li>Flight Tickets</li> 
+                            </div>
+
+                            <div>
+                                <li>Sign In</li> 
+                            </div>
+                        </ul>
+                        
+                    </div>
+                </div>
+                </div>
+                <a href="#" onclick="onClose()" class="close_icon"><i class="bi bi-x-lg"></i></a>
+            <ul>
+                <li><a href="#">Amazon MiniTV</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Mobiles</a></li>
+                <li><a href="#">Today's Deals</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Prime <i class="bi bi-caret-down-fill"></i></a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Gift Ideas</a></li>
+                <li><a href="#">Home & Kitchen</a></li>
+                <li><a href="#">New Launched from Mobiles, Electronics & more | Shop now</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="header">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/header_img1.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/header_img2.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/header_img3.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/header_img4.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/header_img5.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/header_img6.jpeg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/header_img7.jpeg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+
+    <section id="product">
+        <div class="product_img_details">
+            <div class="product_card1">
+                <h1>Up to 75% off | Headphones</h1>
+
+                <div class="product_img">
+                    <div>
+                        <img src="./images/p4.jpeg" alt="">
+                        <p>boAt Up to 75% off | boAt</p>
+                    </div>
+                    <div>
+                        <img src="./images/p3.jpeg" alt="">
+                        <p>boult Up to 75% off | boult</p>
+                    </div>
+
+                </div>
+                <div class="product_img">
+
+                    <div>
+                        <img src="./images/p2.jpeg" alt="">
+                        <p>Noise Up to 75% off | Noise</p>
+                    </div>
+                    <div>
+                        <img src="./images/p1.jpeg" alt="">
+                        <p>Up to 75% off | Zebronics</p>
+                    </div>
+                </div>
+
+                <a href="#">See all offers</a>
+
+            </div>
+
+            <div class="product_card2">
+                <div>
+                    <h1>Bluetooth Calling Smartwatch starts at ₹1,999</h1>
+                    <img src="./images/p5.jpeg" alt="">
+                </div>
+                <a href="#">Shop now</a>
+            </div>
+
+            <div class="product_card3">
+                <h1>Revamp your home in style</h1>
+                <div class="product_img">
+                    <div>
+                        <img src="./images/p6.jpeg" alt="">
+                        <p>Home decor</p>
+                    </div>
+                    <div>
+                        <img src="./images/p7.jpeg" alt="">
+                        <p>Home furnishings</p>
+                    </div>
+
+                </div>
+
+                <div class="product_img">
+                    <div>
+                        <img src="./images/p8.jpeg" alt="">
+                        <p>Home storage</p>
+                    </div>
+                    <div>
+                        <img src="./images/p9.jpeg" alt="">
+                        <p>Lighting solutions</p>
+                    </div>
+                </div>
+                <a href="#">Explore all</a>
+
+            </div>
+
+            <div class="product_card4">
+                <div class="sign_in">
+                    <h1>Sign in for your best
+                        <br>experience
+                    </h1>
+                    <a href="#"><button>Sign in securely</button> </a>
+                </div>
+                <div class="ads">
+                    <img src="https://m.media-amazon.com/images/G/31/img19/AMS/Houseads/Laptops-Sept2019._CB436595915_.jpg"
+                        width="100%" height="auto" alt="Laptops">
+                </div>
+
+
+            </div>
+        </div>
+
+        &nbsp;
+        <div class="product_img_details">
+            <div class="product_card1">
+                <h1>Up to 60% off | Styles for men</h1>
+
+                <div class="product_img">
+                    <div>
+                        <img src="./images/p10.jpeg" alt="">
+                        <p>Clothing</p>
+                    </div>
+                    <div>
+                        <img src="./images/p11.jpeg" alt="">
+                        <p>Footwear</p>
+                    </div>
+
+                </div>
+                <div class="product_img">
+
+                    <div>
+                        <img src="./images/p12.jpeg" alt="">
+                        <p>Watches</p>
+                    </div>
+                    <div>
+                        <img src="./images/p13.jpeg" alt="">
+                        <p>Bags & wallets</p>
+                    </div>
+                </div>
+
+                <a href="#">See all offers</a>
+
+            </div>
+
+            <div class="product_card1">
+                <h1>Starting ₹99 | All your home improvement needs</h1>
+
+                <div class="product_img">
+                    <div>
+                        <img src="./images/p14.jpeg" alt="">
+                        <p>Spin mops, wipes & more</p>
+                    </div>
+                    <div>
+                        <img src="./images/p15.jpeg" alt="">
+                        <p>Bathroom hardware & accessories</p>
+                    </div>
+
+                </div>
+                <div class="product_img">
+
+                    <div>
+                        <img src="./images/p16.jpeg" alt="">
+                        <p>Hammers, screwdrivers & more</p>
+                    </div>
+                    <div>
+                        <img src="./images/p17.jpeg" alt="">
+                        <p>Extension boards, plugs & more</p>
+                    </div>
+                </div>
+
+                <a href="#">Explore all</a>
+
+            </div>
+
+            <div class="product_card1">
+                <h1>Up to 60% off | Styles for <br> women</h1>
+
+                <div class="product_img">
+                    <div>
+                        <img src="./images/p18.jpeg" alt="">
+                        <p>Women's Clothing</p>
+                    </div>
+                    <div>
+                        <img src="./images/p19.jpeg" alt="">
+                        <p>Footwear+Handbags</p>
+                    </div>
+
+                </div>
+                <div class="product_img">
+
+                    <div>
+                        <img src="./images/p20.jpeg" alt="">
+                        <p>Watches</p>
+                    </div>
+                    <div>
+                        <img src="./images/p21.jpeg" alt="">
+                        <p>Fashion jewellery</p>
+                    </div>
+                </div>
+
+                <a href="#">See all offers</a>
+
+            </div>
+
+            <div class="product_card1 p_last">
+                <h1>Appliances for your home | Up to 55% off</h1>
+
+                <div class="product_img">
+                    <div>
+                        <img src="./images/p22.jpeg" alt="">
+                        <p>Air conditioners</p>
+                    </div>
+                    <div>
+                        <img src="./images/p23.jpeg" alt="">
+                        <p>Refrigerators</p>
+                    </div>
+
+                </div>
+                <div class="product_img">
+
+                    <div>
+                        <img src="./images/p24.jpeg" alt="">
+                        <p>Microwaves</p>
+                    </div>
+                    <div>
+                        <img src="./images/p25.jpeg" alt="">
+                        <p>Washing machines</p>
+                    </div>
+                </div>
+
+                <a href="#">See more</a>
+
+            </div>
+        </div>
+
+
+
+        &nbsp;
+
+        <div class="today_deals">
+            <div class="p_header">
+                <h1>Today's Deals</h1>
+                <a href="#">See all deals</a>
+            </div>
+
+            <div class="product_section">
+                <a href="#" class="back"><button id="back_btn"><i class="bi bi-chevron-left"></i></button></a>
+                <div id="product_a">
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p29.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 27% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>8GB RAM 5G Phone at Rs. 12,499</p>
+                        </div>
+                    </div>
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p30.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 89% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Newly Launched Fireboltt Solaris...</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p26.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 56% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Starting 299 - ASIAN Footwear Collect…</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p31.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 87% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Wallpapers from wolpin...</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p32.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 95% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Best offers on PC and Electronic acces…</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p33.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 46% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Best Offers on V-Guard Products</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p34.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 27% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>WaterScience best deals Bath Faucets…</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p35.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 60% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Best Offers on Red Chief & Furo footw…</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p36.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 87% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Wallpapers from wolpin</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p26.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 60% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Starting 299 - ASIAN Footwear Collect…</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p37.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>₹649 and under</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Best Offers on Paragon footwear...</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p38.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 70% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Best Offers on Bacca Bucci Wallet & Belt...</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p39.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 81% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Towel Racks, Shelves and More from w…</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p40.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 75% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Women's Heels & Flats: TRASE, Denill…</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p41.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 51% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Best Offers on Paragon footwear...</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p42.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 46% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Shoe Accessories: SHOEGR, PRO CARE…</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p43.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 58% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Telescopic & Step Ladders from Prime..</p>
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p44.jpeg" alt="">
+                        </div>
+                        <div class="product_desc">
+                            <div class="h_btn">
+                                <a href="#"><button>Up to 60% off</button></a>
+                                <a href="#">
+                                    <p>Deal of the Day</p>
+                                </a>
+                            </div>
+                            <p>Starting 299 - ASIAN Footwear Collect…</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="forward"><button id="forward_btn"><i class="bi bi-chevron-right"></i></button></a>
+            </div>
+
+        </div>
+        </div>
+
+
+        &nbsp;
+        <div class="today_deals">
+
+            <div class="p_header">
+                <h1>Up to 70% off | Home decors from stores near you</h1>
+                <a href="#">See all offers</a>
+            </div>
+
+            <div class="product_section">
+                <a href="#" class="back"><button id="leftBtn"><i class="bi bi-chevron-left"></i></button></a>
+                <div id="product_a">
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p45.jpeg" alt="">
+                        </div>
+ 
+                    </div>
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p46.jpeg" alt="">
+                        </div>
+ 
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p47.jpeg" alt="">
+                        </div>
+                        
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p48.jpeg" alt="">
+                        </div>
+                        
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p49.jpeg" alt="">
+                        </div>
+                        
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p50.jpeg" alt="">
+                        </div>
+                         
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p51.jpeg" alt="">
+                        </div>
+                        
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p52.jpeg" alt="">
+                        </div>
+                        
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p53.jpeg" alt="">
+                        </div>
+                        
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p54.jpeg" alt="">
+                        </div>
+ 
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p55.jpeg" alt="">
+                        </div>
+                      
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p56.jpeg" alt="">
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p57.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p58.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p59.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p60.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p61.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p62.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p63.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p64.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p65.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p66.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p67.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p68.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p69.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p70.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p71.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p72.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p73.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p74.jpeg" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+                <a href="#" class="forward"><button id="right_Btn"><i class="bi bi-chevron-right"></i></button></a>
+            </div>
+        </div>
+
+        <div class="today_deals">
+
+            <div class="p_header">
+                <h1>Up to 50% off | New arrivals alert from stores near you</h1>
+                <a href="#">See all offers</a>
+            </div>
+
+            <div class="product_section">
+                <a href="#" class="back"><button id="leftBtn"><i class="bi bi-chevron-left"></i></button></a>
+                <div id="product_a">
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p75.jpeg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p76.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p78.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p79.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p80.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p81.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p82.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p83.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p84.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p85.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p86.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p87.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p88.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p89.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p90.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p91.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p92.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p93.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/p94.jpeg" alt="">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <a href="#" class="forward"><button id="right_Btn"><i class="bi bi-chevron-right"></i></button></a>
+            </div>
+        </div>
+
+        <div class="product_img_details">
+            <div class="product_card1">
+                <h1>Starting ₹139 | Kitchen products</h1>
+
+                <div class="product_img">
+                    <div>
+                        <img src="./images/p95.jpeg" alt="">
+                        <p>Starting ₹169 | Kitchen tools</p>
+                    </div>
+                    <div>
+                        <img src="./images/p96.jpeg" alt="">
+                        <p>Starting ₹139 | Kitchen racks & holders</p>
+                    </div>
+
+                </div>
+                <div class="product_img">
+
+                    <div>
+                        <img src="./images/p97.jpeg" alt="">
+                        <p>Starting ₹249 | Oven gloves & more</p>
+                    </div>
+                    <div>
+                        <img src="./images/p98.jpeg" alt="">
+                        <p>Starting ₹579 | Steamers & Idli Makers</p>
+                    </div>
+                </div>
+
+                <a href="#">See all offers</a>
+
+            </div>
+
+            <div class="product_card1">
+                <h1>Flat ₹50 cashback | Fruits & vegetables | Amazon Fresh</h1>
+
+                <div class="product_img">
+                    <div>
+                        <img src="./images/p99.jpeg" alt="">
+                        <p>Fruits</p>
+                    </div>
+                    <div>
+                        <img src="./images/p100.jpeg" alt="">
+                        <p>Vegetables</p>
+                    </div>
+
+                </div>
+                <div class="product_img">
+
+                    <div>
+                        <img src="./images/p101.jpeg" alt="">
+                        <p>Season’s special</p>
+                    </div>
+                    <div>
+                        <img src="./images/p102.jpeg" alt="">
+                        <p>Visit the store</p>
+                    </div>
+                </div>
+
+                <a href="#">Explore all</a>
+
+            </div>
+
+            <div class="product_card2">
+                <div>
+                    <h1>Mega Fashion Days | Under ₹699 | Amazon brands & more</h1>
+                    <img src="./images/p107.jpeg" alt="">
+                </div>
+                <a href="#">Shop now</a>
+            </div>
+            <div class="product_card1 p_last">
+                <h1>Appliances for your home | Up to 55% off</h1>
+
+                <div class="product_img">
+                    <div>
+                        <img src="./images/p103.jpeg" alt="">
+                        <p>Sports shoes</p>
+                    </div>
+                    <div>
+                        <img src="./images/p104.jpeg" alt="">
+                        <p>Jewellery & accessories</p>
+                    </div>
+
+                </div>
+                <div class="product_img">
+
+                    <div>
+                        <img src="./images/p105.jpeg" alt="">
+                        <p>Watches & smartwatches</p>
+                    </div>
+                    <div>
+                        <img src="./images/p106.jpeg" alt="">
+                        <p>Bags, wallets & luggage</p>
+                    </div>
+                </div>
+
+                <a href="#">See more</a>
+
+            </div>
+        </div>
+
+        &nbsp;
+        <div class="product_img_details">
+            <div class="product_card2">
+                <div>
+                    <h1>Bestselling Smartwatch starts at ₹999</h1>
+                    <img src="./images/p108.jpg" alt="">
+                </div>
+                <a href="#">Shop now</a>
+            </div>
+
+            <div class="product_card1">
+                <h1>Starting ₹99 | All your home improvement needs</h1>
+
+                <div class="product_img">
+                    <div>
+                        <img src="./images/p14.jpeg" alt="">
+                        <p>Spin mops, wipes & more</p>
+                    </div>
+                    <div>
+                        <img src="./images/p15.jpeg" alt="">
+                        <p>Bathroom hardware & accessories</p>
+                    </div>
+
+                </div>
+                <div class="product_img">
+
+                    <div>
+                        <img src="./images/p16.jpeg" alt="">
+                        <p>Hammers, screwdrivers & more</p>
+                    </div>
+                    <div>
+                        <img src="./images/p17.jpeg" alt="">
+                        <p>Extension boards, plugs & more</p>
+                    </div>
+                </div>
+
+                <a href="#">Explore all</a>
+
+            </div>
+
+            <div class="product_card2">
+                <div>
+                    <h1>Leaked | Watch Now Only on miniTV</h1>
+                    <img src="./images/109.jpg" alt="">
+                </div>
+                <a href="#">Watch more FREE content | only on miniTV</a>
+            </div>
+
+            <div class="product_card1 p_last">
+                <h1>Appliances for your home | Up to 55% off</h1>
+
+                <div class="product_img">
+                    <div>
+                        <img src="./images/p22.jpeg" alt="">
+                        <p>Air conditioners</p>
+                    </div>
+                    <div>
+                        <img src="./images/p23.jpeg" alt="">
+                        <p>Refrigerators</p>
+                    </div>
+
+                </div>
+                <div class="product_img">
+
+                    <div>
+                        <img src="./images/p24.jpeg" alt="">
+                        <p>Microwaves</p>
+                    </div>
+                    <div>
+                        <img src="./images/p25.jpeg" alt="">
+                        <p>Washing machines</p>
+                    </div>
+                </div>
+
+                <a href="#">See more</a>
+
+            </div>
+        </div>
+
+
+        &nbsp;
+
+        <div class="today_deals">
+
+            <div class="p_header">
+                <h1>Up to 70% off | Home decors from stores near you</h1>
+                <a href="#">See all offers</a>
+            </div>
+
+            <div class="product_section">
+                <a href="#" class="back"><button id="leftBtn"><i class="bi bi-chevron-left"></i></button></a>
+                <div id="product_a">
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c1.jpeg" alt="">
+                        </div>
+
+                    </div>
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c2.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c3.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c4.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c5.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c6.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c7.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c8.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c9.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c10.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c11.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c12.jpeg" alt="">
+                        </div>
+
+                    </div>
+
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c13.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c14.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c15.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c16.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c17.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c18.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c19.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c20.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c21.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c22.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="t_product">
+                        <div class="p_img">
+                            <img src="./images/c23.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="forward"><button id="right_Btn"><i class="bi bi-chevron-right"></i></button></a>
+            </div>
+        </div>
+
+
+        <div class="sign_in_buttom">
+            <hr>
+            <p>See personalized recommendations</p>
+            <a href="#"><button>Sign in</button> </a>
+            <div>
+                <p>New Customer? <a href="#">Start here</a></p>
+            </div>
+
+            <hr>
+
+        </div>
+
+
+
+
+
+        <div id="back_to_top"><a href="./index.html">
+                <div class="b_top">
+                    <p>Back to Top</p>
+                </div>
+            </a></div>
+
+        <footer>
+            <div id="footer_content">
+                <div class="content">
+                    <h2>Get to Know Us</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Carrers</a></li>
+                        <li><a href="#">Press Releases</a></li>
+                        <li><a href="#">Amazon Science</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h2>Connect with Us</h2>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h2>Make Money with Us</h2>
+
+                    <ul>
+                        <li><a href="#">Sell on Amazon</a></li>
+                        <li><a href="#">Sell under Amazon Accelerator</a></li>
+                        <li><a href="#">Protect and Build Your Brand</a></li>
+                        <li><a href="#">Amazon Global Selling</a></li>
+                        <li><a href="#">Become an Affiliate</a></li>
+                        <li><a href="#">Fulfilment by Amazon</a></li>
+                        <li><a href="#">Advertise Your Products</a></li>
+                        <li><a href="#">Amazon Pay on Merchants</a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h2>Let Us Help You</h2>
+                    <ul>
+                        <li><a href="#">COVID-19 and Amazon</a></li>
+                        <li><a href="#">Your Account</a></li>
+                        <li><a href="#">Returns centre</a></li>
+                        <li><a href="#">100% Purchase Protection</a></li>
+                        <li><a href="#">Amazon App Download</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+
+            <div>
+
+                <div class="footer_language_selector">
+                    <img src="./images/amazon_logo.png" alt="">
+                    <a href="#"><button><i class="bi bi-globe"></i><select name="language" id="">
+                                <option value="English">English</option>
+                                <option value="Hindi">Hindi(हिन्दी)</option>
+                                <option value="Tamil">Tamil(தமிழ்)</option>
+                                <option value="Telgu">తెలుగు-</option>
+                                <option value="Kn">ಕನ್ನಡ </option>
+                                <option value="Ml">മലയാളം</option>
+                                <option value="Bn">বাংলা</option>
+                                <option value="Marathi">मराठी</option>
+                            </select></button></a>
+                </div>
+
+                <div class="Footer_country">
+                    <ul class="upper_ul">
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">Brazil</a></li>
+                        <li><a href="#">Canada</a></li>
+                        <li><a href="#">China</a></li>
+                        <li><a href="#">France</a></li>
+                        <li><a href="#">Germany</a></li>
+                        <li><a href="#">Italy</a></li>
+                        <li><a href="#">Japan</a></li>
+                        <li><a href="#">Mexico</a></li>
+                        <li><a href="#">Netherlands</a></li>
+                        <li><a href="#">Poland</a></li>
+                        <li><a href="#">Singapore</a></li>
+                        <li><a href="#">Spain</a></li>
+                        <li><a href="#">Turkey</a></li>
+                    </ul>
+                    <ul class="centre_ul">
+                        <li><a href="#">United Arab Emirates</a></li>
+                        <li><a href="#">United Kingdom</a></li>
+                        <li><a href="#">United States</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <div class="footer_links">
+                    <div class="footer_links_item">
+                        <a href="">
+                            <h2>AbeBooks</h2>
+                            <br>
+                            Books, art
+                            & collectibles
+                        </a>
+
+                        <a href="">
+                            <h2>Shopbop</h2><br>
+                            Designer
+                            Fashion Brands
+                        </a>
+                    </div>
+                    <div class="footer_links_item">
+                        <a href="">
+                            <h2>Amazon Web Services</h2>
+                            <br>
+                            Scalable Cloud
+                            Computing Services
+                        </a>
+
+                        <a href="">
+                            <h2>Amazon Business</h2><br>
+                            Everything For
+                            Your Business
+                        </a>
+
+                    </div>
+                    <div class="footer_links_item">
+                        <a href="">
+                            <h2>Audible</h2>
+                            <br>
+                            Download
+                            Audio Books
+                        </a>
+
+                        <a href="">
+                            <h2>Prime Now</h2><br>
+                            2-Hour Delivery
+                            on Everyday Items
+                        </a>
+                    </div>
+                    <div class="footer_links_item">
+                        <a href="">
+                            <h2>DPReview</h2>
+                            <br>
+                            Digital
+                            Photography
+                        </a>
+
+                        <a href="">
+                            <h2>Amazon Prime Music</h2><br>
+                            100 million songs, ad-free
+                            Over 15 million podcast episodes
+                        </a>
+                    </div>
+                    <div class="footer_links_item">
+                        <a href="">
+                            <h2>IMDb</h2>
+                            <br>
+                            Movies, TV
+                            & Celebrities
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_buttom">
+                <div class="footer_privacy">
+                    <a href="">Conditions of Use & Sale</a>
+                    <a href="">Privacy Notice</a>
+                    <a href="">Interest-Based Ads</a>
+                </div>
+                <div class="footer_copyright">
+                    <p>&copy; 1996-2023, Amazon.com, Inc. or its affiliates</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="./main.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
